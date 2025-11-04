@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kasara Makeup</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/2.png">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(160deg, #fffdf9 0%, #f8f1e4 60%, #f3e9d2 100%);
+      color: #3f3a35;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      animation: fadeInPage 1.2s ease-in-out;
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      box-shadow: 0 10px 40px rgba(191, 164, 111, 0.18);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      animation: fadeInCard 1.5s ease forwards;
+    }
+
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .profile-photo {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto;
+      border: 3px solid rgba(191, 164, 111, 0.3);
+      box-shadow: 0 8px 18px rgba(191, 164, 111, 0.25);
+      animation: fadeInImage 1.8s ease forwards;
+    }
+
+    @keyframes fadeInImage {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      margin-top: 1rem;
+      color: #2b2723;
+      letter-spacing: 0.5px;
+    }
+
+    p.sub {
+      font-size: 0.9rem;
+      color: #6b625a;
+      margin-bottom: 0.5rem;
+    }
+
+    p.about {
+      font-size: 0.95rem;
+      color: #544e48;
+      margin: 1rem 0 1.5rem;
+      font-style: italic;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      background: #fdf9f3;
+      color: #3b352f;
+      font-weight: 500;
+      padding: 12px;
+      border-radius: 50px;
+      border: 1px solid rgba(191, 164, 111, 0.25);
+      box-shadow: 0 5px 12px rgba(191, 164, 111, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .social-btn:hover {
+      background: linear-gradient(90deg, #fff7ec, #f9f2e6);
+      color: #6e5b30;
+      transform: translateY(-3px);
+      box-shadow: 0 0 12px rgba(191, 164, 111, 0.35), 0 8px 20px rgba(191, 164, 111, 0.2);
+    }
+
+    .social-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #9c8b6c;
+      transition: all 0.3s ease;
+    }
+
+    .social-btn:hover svg {
+      fill: #bfa46f;
+      filter: drop-shadow(0 0 6px rgba(191,164,111,0.45));
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    footer {
+      margin-top: 1.8rem;
+      font-size: 0.8rem;
+      color: #7a726a;
+    }
+
+    footer::after {
+      content: " — Beauty with confidence";
+      font-style: italic;
+      color: #bfa46f;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img src="img/2.png" alt="Kasara Makeup" class="profile-photo">
+    <h1>Kasara Makeup</h1>
+    <p class="sub">Makeup Artist — Surabaya</p>
+    <p class="about">“Menghadirkan kecantikan alami setiap wanita dengan sentuhan lembut dan detail yang elegan.”</p>
+
+    <div class="social-links">
+      <a href="https://www.instagram.com/kasaramakeup?igsh=MWwweHBsOTdvbnF1dg==" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm6.5-.25a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5z"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.tiktok.com/@salsaarraa?_r=1&_t=ZS-916siEuw08X" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.75 3v9.25a3.75 3.75 0 11-3.75-3.75V6.6A6.9 6.9 0 1019 13V8.7a4.6 4.6 0 01-3.25-1.35A4.5 4.5 0 0114 3h-1.25z"/></svg>
+        TikTok
+      </a>
+      <a href="https://wa.me/6282131638010" target="_blank" class="social-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.01 2a9.97 9.97 0 00-8.7 14.96L2 22l5.21-1.36A9.97 9.97 0 1012 2h.01zM12 4a8 8 0 017.41 10.88.99.99 0 00-.13.52v.11l.4 1.49-1.56-.41h-.1a1 1 0 00-.52.13A8 8 0 114 12c0 4.42 3.58 8 8 8z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <footer>© 2025 Kasara Makeup</footer>
+  </main>
+</body>
+</html>
